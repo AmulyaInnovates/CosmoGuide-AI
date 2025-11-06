@@ -1,0 +1,150 @@
+<!-- 7th November,2025-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CosmoGuide AI — Space SOS Helper</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <!-- Zapier chatbot module -->
+  <script async type="module" src="https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js"></script>
+  <style>
+    body { min-height: 100vh; color: #eee; font-family: 'Orbitron', Arial, sans-serif; background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); overflow-x: hidden; position: relative; }
+    /* Falling star animation and rest of your CSS (unchanged) */
+    #outerspace { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); overflow: hidden; z-index: -20; }
+    #starfield { position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; }
+    #stars-sm, #stars-md, #stars-lg { position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; }
+    #stars-sm { box-shadow: 20vw 10vh #fff, 14vw 60vh #b8d1e0, 80vw 44vh #fff, 63vw 82vh #b6a6da, 15vw 77vh #eee, 69vw 18vh #dde, 87vw 45vh #fff, 55vw 29vh #fff, 33vw 92vh #cbe, 90vw 53vh #fff, 41vw 50vh #fff, 18vw 78vh #fff, 2vw 88vh #ebe, 75vw 61vh #ffe, 21vw 29vh #fff; animation: movestars 180s linear infinite; height: 2px; width: 2px; }
+    #stars-md { box-shadow: 9vw 37vh #fff, 57vw 3vh #effefd, 68vw 21vh #fff, 77vw 64vh #faa, 33vw 82vh #b8d1e0; animation: movestars 320s linear infinite; height: 3px; width: 3px; }
+    #stars-lg { box-shadow: 19vw 56vh #fff, 71vw 35vh #fff, 21vw 78vh #fff, 49vw 51vh #fff, 93vw 60vh #fff; animation: movestars 700s linear infinite; height: 4px; width: 4px; }
+    @keyframes movestars { from { transform: translateY(0); } to { transform: translateY(220px); } }
+    .falling-stars-bg { position: fixed; inset: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 0; overflow: hidden; }
+    .falling-star { position: absolute; top: -40px; width: 2px; height: 80px; background: linear-gradient(90deg, #fff, #58bffb55 60%, transparent 100%); opacity: 0.75; border-radius: 2px; animation: fallStar 2.8s linear infinite; }
+    .falling-star:nth-child(1) { left: 7vw; animation-delay: 0s;}
+    .falling-star:nth-child(2) { left: 26vw; animation-delay: 0.6s;}
+    .falling-star:nth-child(3) { left: 40vw; animation-delay: 1.3s;}
+    .falling-star:nth-child(4) { left: 59vw; animation-delay: 2.2s;}
+    .falling-star:nth-child(5) { left: 76vw; animation-delay: 1.7s;}
+    .falling-star:nth-child(6) { left: 87vw; animation-delay: 0.95s;}
+    @keyframes fallStar { 0% { transform: translateY(0) scaleX(1.35) scaleY(1); opacity: 1;} 85% { opacity: 1;} 95% { opacity: 0.5;} 100% { transform: translateY(108vh) scaleX(0.7) scaleY(1.3); opacity: 0;} }
+    .entry-scene { position: fixed; inset: 0; z-index: 1000; background: linear-gradient(180deg, #0d1436 70%, #090a0f 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; transition: opacity 1s; }
+    .logo-container { width: 340px; height: 340px; display: flex; align-items: center; justify-content: center; background: rgba(30,45,70,0.85); box-shadow: 0 0 60px #00d0ff66, 0 0 28px #2de2fc33; border-radius: 50%; margin-bottom: 40px; }
+    .logo-container img { width: 310px; height: 310px; border-radius: 50%; background: #243c6b; object-fit: cover; box-shadow: 0 0 32px #0077be55; display: block; }
+    .entry-title { color: #fff; font-size: 2.7rem; letter-spacing: 0.12em; text-shadow: 0 0 18px #00d0ff, 0 0 50px #0077be; margin-bottom: 18px; text-align: center; animation: headline-glow 3s infinite alternate; }
+    .entry-subtitle { color: #73cfff; font-size: 1.35em; text-shadow: 0 0 8px #0077be; text-align: center; margin-bottom: 22px; animation: subtitle-fade 3s infinite; }
+    .entry-scene.fade-out { opacity: 0; pointer-events: none; }
+    @keyframes subtitle-fade { 0%,100% { opacity: 1;} 50% { opacity: 0.75;} }
+    .space-header { text-align: center; padding: 3rem 0 2rem 0; }
+    .space-header h1 { color: #fff; font-size: 3rem; text-shadow: 0 0 15px #00d0ff, 0 0 35px #0077be, 0 0 1.2em #72faff88, 0 0 0px #ff22ff; margin-bottom: 0.3em; animation: headline-glow 3s infinite alternate; }
+    @keyframes headline-glow { 0% { color: #fff; text-shadow: 0 0 15px #00d0ff, 0 0 34px #0077be, 0 0 1.1em #72d6ff66, 0 0 0px #ff22ff; letter-spacing: 0.12em; transform: scale(1); } 30% { color: #64d4ff; text-shadow: 0 0 20px #00f6ffbf, 0 0 42px #54c3ff, 0 0 1.6em #00bfff44, 0 0 10px #f654ff44; letter-spacing: 0.18em; transform: scale(1.04); } 65% { color: #ffeefd; text-shadow: 0 0 16px #db84ff, 0 0 40px #8900ff, 0 0 2.1em #ffffff33, 0 0 0px #ffbcff99; letter-spacing: 0.13em; transform: scale(1.015); } 100% { color: #82f5ff; text-shadow: 0 0 21px #2dfcff, 0 0 46px #8aadffbb, 0 0 3em #ffd6f8cc, 0 0 13px #ffebff88; letter-spacing: 0.15em; transform: scale(1.023); } }
+    .space-header .lead { color: #80d4ff; font-size: 1.5em; text-shadow: 0 0 8px #0077be; margin-bottom: 24px; }
+    
+    .explanation { background: rgba(24, 38, 58, 0.95); border-radius: 1rem; box-shadow: 0 0 24px #00d0ff35; padding: 2rem; color: #deedfa; line-height: 1.7; margin-bottom: 2.5rem; margin-left: auto; margin-right: auto; max-width: 820px; font-size: 1.18em;text-align: center;}
+    
+    .features-row { display: flex; flex-wrap: wrap; gap: 1.7rem; justify-content: center; }
+    .feature-card { background: rgba(18, 31, 53, 0.88); border-radius: 1.15rem; box-shadow: 0 0 24px #00d0ff35; color: #cde8fa; border: 2px solid transparent; transition: box-shadow 0.35s cubic-bezier(0.4,0.2,0.2,1), border-color 0.25s, transform 0.18s; margin-bottom: 1rem; min-width: 260px; max-width: 370px; flex: 1 1 320px; display: flex; flex-direction: column; justify-content: center; }
+    .feature-card h5 { color: #ffe270; text-shadow: 0 0 10px #ffb200;}
+    .feature-card:hover { border-color: #ff9100; box-shadow: 0 0 45px #ff910077, 0 0 24px #00d0ff55; transform: scale(1.055); z-index: 2; }
+    .feature-card .card-body { padding: 1.22rem 1rem;}
+    .footer { text-align: center; color: #80a0c0; padding: 2.5rem 0 1.1rem; font-size: 1.1em; margin-top: 1.2rem; }
+    @media (max-width: 1000px) { .features-row { gap: 1.1rem;} .feature-card { min-width: 240px; max-width: 98vw;} .logo-container { width: 190px; height: 190px;} .logo-container img { width: 170px; height: 170px;} .entry-title { font-size: 2rem;} }
+    @media (max-width: 800px) { .space-header { padding: 2rem 0 1.3rem 0;} .footer { padding: 1rem 0 0.7rem;} }
+    .video-module { position: relative; z-index: 10; }
+    .open-video-btn { display: block; margin: 2em auto; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; font-size: 1.12em; color: #fff; background: #1F242D; border-radius: 16px; padding: 0.8em 2em; border: none; box-shadow: 0 3px 18px #001a42b5; cursor: pointer; transition: background 0.2s; }
+    .open-video-btn:hover { background: #27324a; }
+    .video-overlay { display: none; position: fixed; z-index: 4000; top: 0; left: 0; right: 0; bottom: 0; background: rgba(10,20,40,0.88); justify-content: center; align-items: center; }
+    .video-overlay.active { display: flex; animation: fadein 0.3s; }
+    @keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+    .video-overlay video { max-width: 92vw; max-height: 84vh; border-radius: 28px; background: #111; box-shadow: 0 0 38px #2dfcff77; outline: none; display: block; }
+    body.video-open { overflow: hidden; }
+  </style>
+</head>
+<body>
+  <!-- Starfield Galaxy Background Layer -->
+  <div id="outerspace">
+    <div id="starfield">
+      <div id="stars-sm"></div>
+      <div id="stars-md"></div>
+      <div id="stars-lg"></div>
+    </div>
+  </div>
+  <!-- Falling Star Animation Background -->
+  <div class="falling-stars-bg">
+    <div class="falling-star"></div>
+    <div class="falling-star"></div>
+    <div class="falling-star"></div>
+    <div class="falling-star"></div>
+    <div class="falling-star"></div>
+    <div class="falling-star"></div>
+  </div>
+  <!-- Entry Scene (Splash Screen) -->
+  <div class="entry-scene" id="entryScene" onclick="fadeOutEntry()">
+    <div class="logo-container">
+      <img src="https://i.postimg.cc/6ypPCqCr/logo-cosmo.png" alt="CosmoGuide AI Logo">
+    </div>
+    <div class="entry-title">CosmoGuide AI</div>
+    <div class="entry-subtitle">Your Ultimate Space Problem & SOS Companion</div>
+    <span style="color:#aecfff;font-size:1em;opacity:0.6;">Click or wait to enter</span>
+  </div>
+  <main>
+    <div class="container-lg px-4">
+      <header class="space-header">
+        <h1>CosmoGuide AI</h1>
+        <div class="lead">Your Ultimate Space Problem & SOS Companion</div>
+      </header>
+      <div class="video-module">
+        <button class="open-video-btn">Watch the video</button>
+        <div class="video-overlay" id="videoOverlay">
+          <video id="myVideo" src="https://rr2---sn-npoldn76.googlevideo.com/videoplayback?expire=1762465854&ei=3sMMaeTaNrG6sfIPro31qAI&ip=179.61.245.103&id=o-AOnN3p3jGRuzzEhmpku8XeQQdmKVMONUfqudQSjyLKbJ&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&rms=au%2Cau&bui=AdEuB5SUPG5xskNzrLj-NjT1vuwnAH3b6bvtdKhCg6uTBU8DwYhFiLwCbeC3sIQiaKPaI9xAe7XsHfTu&spc=6b0G_Dz8FU4owY3sov9vHhTU_RjsJ7t1RPfzkJ8UGj4xRLNaawdCcnBbw6TZaQ4NagI&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&gir=yes&clen=20383331&ratebypass=yes&dur=373.423&lmt=1756270307007489&fexp=51552689,51565115,51565682,51580968,51626155&c=ANDROID&txp=6308224&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRAIgIRzqMuQ53n8MZXdIWoQggnjxO0Kp0Ah0pbRA2mAL5UICIGBd7DPNObQ-686RDJxpazS4LL6TXZiTjXJ4jsQw13wb&rm=sn-a5mrr76&rrc=104,191&req_id=a9b1f8b32e2ea3ee&ipbypass=yes&redirect_counter=2&cm2rm=sn-cvhse7e&cms_redirect=yes&cmsv=e&met=1762444263,&mh=9n&mip=106.219.121.82&mm=34&mn=sn-npoldn76&ms=ltu&mt=1762443929&mv=m&mvi=2&pl=23&lsparams=ipbypass,met,mh,mip,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRQIhAMk94kjgaK5Eq0HVnAcmfxmGREwPkYWff0la92jERkvnAiAXxu-sSyaH7THm5LdTV20FeY2BpERRbKWEl2WZPNCcnA%3D%3D" controls autoplay loop playsinline></video>
+        </div>
+      </div>
+      <div class="explanation">
+        <strong>CosmoGuide AI</strong> is your intelligent partner for overcoming any challenge—routine or emergency—beyond the boundaries of Earth. Engineered for astronauts, scientists, and explorers, it brings together reliable support, expertise, and connectivity crucial for deep space missions. Whether diagnosing malfunctions, facing health emergencies, or seeking expert advice, CosmoGuide AI is built for rapid, autonomous, and resilient help.
+      </div>
+      <div class="features-row mb-4">
+        <div class="card feature-card"><div class="card-body"><h5 class="card-title">Instant Troubleshooting</h5><p class="card-text">AI-powered diagnostics and solutions for spacecraft systems, equipment failures, and resource challenges.</p></div></div>
+        <div class="card feature-card"><div class="card-body"><h5 class="card-title">Emergency Communication</h5><p class="card-text">Immediate activation of emergency protocols and access to mission control or rescue links anywhere in space.</p></div></div>
+        <div class="card feature-card"><div class="card-body"><h5 class="card-title">Survival Guidance</h5><p class="card-text">Clear step-by-step support for survival scenarios: oxygen, water, food rationing and hazard management.</p></div></div>
+        <div class="card feature-card"><div class="card-body"><h5 class="card-title">Space Navigation</h5><p class="card-text">Live assistance for navigation, collision avoidance, and orbital corrections using up-to-date data.</p></div></div>
+        <div class="card feature-card"><div class="card-body"><h5 class="card-title">Medical Assistance</h5><p class="card-text">Voice-guided first aid, health protocols, and diagnostics for astronauts in isolated or hazardous conditions.</p></div></div>
+        <div class="card feature-card"><div class="card-body"><h5 class="card-title">Expert Chat & Community</h5><p class="card-text">Instant connection to domain experts, mission advisors, or astronaut communities for real-time problem-solving and support.</p></div></div>
+      </div>
+      <footer class="footer">
+        © 2025 CosmoGuide AI — Helping Humanity Across the Stars
+      </footer>
+    </div>
+  </main>
+  <!-- Zapier Chatbot Embed as LAST element in body, NO CSS needed -->
+  <zapier-interfaces-chatbot-embed is-popup='true' chatbot-id='cmhkv46af003x18bwdlso3ka9'></zapier-interfaces-chatbot-embed>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Splash fade function
+    function fadeOutEntry() {
+      var el = document.getElementById('entryScene');
+      if (el) {
+        el.classList.add('fade-out');
+        setTimeout(function(){ el.style.display = 'none'; }, 1000);
+      }
+    }
+    setTimeout(fadeOutEntry, 2500);
+    // Video popup logic
+    const openBtn = document.querySelector('.open-video-btn');
+    const overlay = document.getElementById('videoOverlay');
+    const video = document.getElementById('myVideo');
+    openBtn.addEventListener('click', () => {
+      overlay.classList.add('active');
+      setTimeout(()=>video.play(), 300);
+      document.body.classList.add('video-open');
+    });
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) {
+        overlay.classList.remove('active');
+        video.pause();
+        document.body.classList.remove('video-open');
+      }
+    });
+  </script>
+</body>
+</html>
