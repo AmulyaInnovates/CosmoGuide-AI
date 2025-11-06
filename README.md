@@ -37,3 +37,26 @@ CosmoGuide AI is your intelligent partner for overcoming any challenge—routine
 1. Clone this repository:
    ```bash
    git clone https://github.com/AmulyaInnovates/CosmoGuideAI.git
+2. Open the `.java` files in your favorite Java IDE.
+3. Compile & run to explore the functionality.
+
+---
+
+## 🤝 Collaboration & Connection
+
+Whether you're building something with Java, exploring GUI frameworks, or just want to brainstorm ideas — I’d love to connect.
+
+- 💬 Open to code reviews and pair programming
+- 🤝 Collaborations on Java-based utilities or systems welcome
+- 🚀 Happy to help or co-create
+
+---
+
+## 📬 Contact
+
+📧 Email: amulya.gupta.2556@gdgoenkarohini.edu.in  
+🐙 GitHub: [AmulyaInnovates](https://github.com/AmulyaInnovates)
+
+---
+
+> *Beyond Earth, beyond limits — CosmoGuide AI lights the path through the unknown.*
