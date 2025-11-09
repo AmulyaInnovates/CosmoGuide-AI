@@ -6,11 +6,11 @@ CosmoGuide AI is your intelligent partner for overcoming any challenge—routine
 
 ---
 
-<div align="center" style="display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap;">
+<div align="center" style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
 
   <!-- Left Image -->
   <div>
-    <img src="CosmoCalling.jpg" alt="Cosmo Calling" width="250" height="250" style="border-radius: 10px; border: 2px solid #ccc;">
+    <img src="CosmoCalling.jpg" alt="Cosmo Calling" width="250" height="250" style="border-radius: 10px; align-items: left; border: 2px solid #ccc;">
   </div>
 
   <!-- Middle Info -->
@@ -24,7 +24,7 @@ CosmoGuide AI is your intelligent partner for overcoming any challenge—routine
 
   <!-- Right Image -->
   <div>
-    <img src="Project_Presentation.jpg" alt="Project Presentation" width="250" height="250" style="border-radius: 10px; border: 2px solid #ccc;">
+    <img src="Project_Presentation.jpg" alt="Project Presentation" width="250" height="250" style="border-radius: 10px; align-items: right; border: 2px solid #ccc;">
   </div>
 
 </div>
