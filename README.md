@@ -14,6 +14,13 @@ CosmoGuide AI is your intelligent partner for overcoming any challenge—routine
 
 ---
 
+<p align="center">
+  <img src="https://i.postimg.cc/MTT8xZWs/space1.jpg" alt="Space Image 1" width="220" height="220" style="border-radius:15px; margin:10px;">
+  <img src="https://i.postimg.cc/j5h5FYwN/space2.jpg" alt="Space Image 2" width="220" height="220" style="border-radius:15px; margin:10px;">
+</p>
+
+---
+
 ## 🛠️ Tech Stack
 
 - **Languages:** HTML, CSS, JavaScript  
