@@ -6,25 +6,28 @@ CosmoGuide AI is your intelligent partner for overcoming any challenge—routine
 
 ---
 
-<div align="center" style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
+<div align="center" style="margin-top: 10px; margin-bottom: 10px;">
+
+  <img src="https://img.shields.io/badge/Language-HTML%2C%20CSS%2C%20JavaScript-blue?style=for-the-badge" style="margin:6px;">
+  <img src="https://img.shields.io/badge/Editor-Amulya--Gupta-orange?style=for-the-badge" style="margin:6px;">
+  <img src="https://img.shields.io/github/repo-size/AmulyaInnovates/CosmoGuide-AI?style=for-the-badge" style="margin:6px;">
+  <img src="https://img.shields.io/github/stars/AmulyaInnovates/CosmoGuide-AI?style=for-the-badge" style="margin:6px;">
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" style="margin:6px;">
+
+</div>
+
+---
+
+<div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 30px;">
 
   <!-- Left Image -->
-  <div>
-    <img src="CosmoCalling.jpg" alt="Cosmo Calling" width="250" height="250" style="border-radius: 10px; align-items: left; border: 2px solid #ccc;">
-  </div>
-
-  <!-- Middle Info -->
-  <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 280px;">
-    <img src="https://img.shields.io/badge/Language-HTML%2C%20CSS%2C%20JavaScript-blue?style=for-the-badge" style="margin:6px 0;">
-    <img src="https://img.shields.io/badge/Editor-Amulya--Gupta-orange?style=for-the-badge" style="margin:6px 0;">
-    <img src="https://img.shields.io/github/repo-size/AmulyaInnovates/CosmoGuide-AI?style=for-the-badge" style="margin:6px 0;">
-    <img src="https://img.shields.io/github/stars/AmulyaInnovates/CosmoGuide-AI?style=for-the-badge" style="margin:6px 0;">
-    <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" style="margin:6px 0;">
+  <div style="flex: 1; text-align: left;">
+    <img src="CosmoCalling.jpg" alt="Cosmo Calling" width="280" style="border-radius: 10px; border: 2px solid #ccc;">
   </div>
 
   <!-- Right Image -->
-  <div>
-    <img src="Project_Presentation.jpg" alt="Project Presentation" width="250" height="250" style="border-radius: 10px; align-items: right; border: 2px solid #ccc;">
+  <div style="flex: 1; text-align: right;">
+    <img src="Project_Presentation.jpg" alt="Project Presentation" width="280" style="border-radius: 10px; border: 2px solid #ccc;">
   </div>
 
 </div>
