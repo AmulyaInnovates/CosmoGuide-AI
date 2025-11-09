@@ -16,21 +16,6 @@ CosmoGuide AI is your intelligent partner for overcoming any challenge—routine
 
 ---
 
-<!-- Horizontal Images Section -->
-<div style="display: flex; justify-content: center; align-items: center; gap: 40px; margin-top: 20px; flex-wrap: wrap;">
-
-  <div>
-    <img src="CosmoCalling.jpg" alt="Cosmo Calling" width="300" height="auto" style="border-radius: 10px; border: 3px solid #ccc;">
-  </div>
-
-  <div>
-    <img src="Project_Presentation.jpg" alt="Project Presentation" width="300" height="auto" style="border-radius: 10px; border: 3px solid #ccc;">
-  </div>
-
-</div>
-
----
-
 ## 🛠️ Tech Stack
 
 - **Languages:** HTML, CSS, JavaScript  
