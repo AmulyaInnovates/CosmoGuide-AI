@@ -6,28 +6,25 @@ CosmoGuide AI is your intelligent partner for overcoming any challenge—routine
 
 ---
 
-<div align="center" style="margin-top: 10px; margin-bottom: 10px;">
-
+<div align="center" style="margin-top: 10px; margin-bottom: 20px;">
   <img src="https://img.shields.io/badge/Language-HTML%2C%20CSS%2C%20JavaScript-blue?style=for-the-badge" style="margin:6px;">
   <img src="https://img.shields.io/badge/Editor-Amulya--Gupta-orange?style=for-the-badge" style="margin:6px;">
   <img src="https://img.shields.io/github/repo-size/AmulyaInnovates/CosmoGuide-AI?style=for-the-badge" style="margin:6px;">
   <img src="https://img.shields.io/github/stars/AmulyaInnovates/CosmoGuide-AI?style=for-the-badge" style="margin:6px;">
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" style="margin:6px;">
-
 </div>
 
 ---
 
-<div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 30px;">
+<!-- Horizontal Images Section -->
+<div style="display: flex; justify-content: center; align-items: center; gap: 40px; margin-top: 20px; flex-wrap: wrap;">
 
-  <!-- Left Image -->
-  <div style="flex: 1; text-align: left;">
-    <img src="CosmoCalling.jpg" alt="Cosmo Calling" width="280" style="border-radius: 10px; border: 2px solid #ccc;">
+  <div>
+    <img src="CosmoCalling.jpg" alt="Cosmo Calling" width="300" height="auto" style="border-radius: 10px; border: 3px solid #ccc;">
   </div>
 
-  <!-- Right Image -->
-  <div style="flex: 1; text-align: right;">
-    <img src="Project_Presentation.jpg" alt="Project Presentation" width="280" style="border-radius: 10px; border: 2px solid #ccc;">
+  <div>
+    <img src="Project_Presentation.jpg" alt="Project Presentation" width="300" height="auto" style="border-radius: 10px; border: 3px solid #ccc;">
   </div>
 
 </div>
