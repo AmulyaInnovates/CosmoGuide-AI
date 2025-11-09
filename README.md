@@ -15,8 +15,8 @@ CosmoGuide AI is your intelligent partner for overcoming any challenge—routine
 ---
 
 <p align="center">
-  <img src="https://i.postimg.cc/MTT8xZWs/space1.jpg" alt="Space Image 1" width="220" height="220" style="border-radius:15px; margin:10px;">
-  <img src="https://i.postimg.cc/j5h5FYwN/space2.jpg" alt="Space Image 2" width="220" height="220" style="border-radius:15px; margin:10px;">
+  <img src="CosmoCalling.jpg" alt="Cosmo Calling" width="220" height="220" style="border-radius:15px; margin:10px;">
+  <img src="Project_Presentation.jpg" alt="Project Presentation" width="220" height="220" style="border-radius:15px; margin:10px;">
 </p>
 
 ---
@@ -53,9 +53,9 @@ CosmoGuide AI is your intelligent partner for overcoming any challenge—routine
 
 Whether you're building something with Java, exploring GUI frameworks, or just want to brainstorm ideas — I’d love to connect.
 
-- 💬 Open to code reviews and pair programming
-- 🤝 Collaborations on Java-based utilities or systems welcome
-- 🚀 Happy to help or co-create
+- 💬 Open to code reviews and pair programming  
+- 🤝 Collaborations on Java-based utilities or systems welcome  
+- 🚀 Happy to help or co-create  
 
 ---
 
