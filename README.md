@@ -6,7 +6,7 @@ CosmoGuide AI is your intelligent partner for overcoming any challenge—routine
 
 ---
 
-<p align="center">
+<p align="left">
   <img src="https://img.shields.io/badge/Language-HTML%2C%20CSS%2C%20JavaScript-blue?style=for-the-badge">
   <img src="https://img.shields.io/badge/Editor-Amulya--Gupta-orange?style=for-the-badge">
   <img src="https://img.shields.io/github/repo-size/AmulyaInnovates/CosmoGuide-AI?style=for-the-badge">
