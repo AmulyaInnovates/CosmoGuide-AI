@@ -9,11 +9,11 @@ CosmoGuide AI is your intelligent partner for overcoming any challenge—routine
 <div align="center" style="display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap;">
 
   <!-- Left Image -->
-  <div style="border: 5px solid #00c3ff; box-shadow: 0 0 25px #00c3ff, 0 0 50px #0077ff; border-radius: 20px; padding: 6px; transition: all 0.3s ease;">
-    <img src="CosmoCalling.jpg" alt="Cosmo Calling" width="250" height="250" style="border-radius: 15px;">
+  <div>
+    <img src="CosmoCalling.jpg" alt="Cosmo Calling" width="250" height="250" style="border-radius: 10px; border: 2px solid #ccc;">
   </div>
 
-  <!-- Middle Badges Column -->
+  <!-- Middle Info -->
   <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 280px;">
     <img src="https://img.shields.io/badge/Language-HTML%2C%20CSS%2C%20JavaScript-blue?style=for-the-badge" style="margin:6px 0;">
     <img src="https://img.shields.io/badge/Editor-Amulya--Gupta-orange?style=for-the-badge" style="margin:6px 0;">
@@ -23,8 +23,8 @@ CosmoGuide AI is your intelligent partner for overcoming any challenge—routine
   </div>
 
   <!-- Right Image -->
-  <div style="border: 5px solid #ff9d00; box-shadow: 0 0 25px #ff9d00, 0 0 50px #ff6600; border-radius: 20px; padding: 6px; transition: all 0.3s ease;">
-    <img src="Project_Presentation.jpg" alt="Project Presentation" width="250" height="250" style="border-radius: 15px;">
+  <div>
+    <img src="Project_Presentation.jpg" alt="Project Presentation" width="250" height="250" style="border-radius: 10px; border: 2px solid #ccc;">
   </div>
 
 </div>
@@ -34,45 +34,25 @@ CosmoGuide AI is your intelligent partner for overcoming any challenge—routine
 ## 🛠️ Tech Stack
 
 - **Languages:** HTML, CSS, JavaScript  
-- **Frameworks/Libraries:** Bootstrap, GSAP (for animations)  
+- **Frameworks/Libraries:** Bootstrap, GSAP  
 - **Tools Used:** VS Code, GitHub Pages  
-- **Focus Areas:** Futuristic UI, Responsive Design, Interactive Elements, Dynamic Lightning Effects  
+- **Focus Areas:** Responsive Design, Interactive Elements, Clean UI  
 
 ---
 
 ## 🌌 Key Features
 
-- ⚡ **AI-Powered Guidance:** Quick decision support for emergencies and technical challenges  
-- 🛰️ **Space-Grade Interface:** Designed with a futuristic, cosmic theme  
-- 💡 **Interactive Experience:** Blue lightning borders, hover transitions, and glowing animations  
-- 🔧 **Customizable Design:** Easily tweak effects and visuals to fit any mission scenario  
-
----
-
-## 📌 How to Use
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/AmulyaInnovates/CosmoGuide-AI.git
-2. Open the `.java` files in your favorite Java IDE.
-3. Compile & run to explore the functionality.
-
----
-
-## 🤝 Collaboration & Connection
-
-Whether you're building something with Java, exploring GUI frameworks, or just want to brainstorm ideas — I’d love to connect.
-
-- 💬 Open to code reviews and pair programming  
-- 🤝 Collaborations on Java-based utilities or systems welcome  
-- 🚀 Happy to help or co-create  
+- ⚡ AI-Powered Space SOS Support  
+- 🛰️ Futuristic Interface Design  
+- 💡 Interactive Hover Effects  
+- 🔧 Customizable Components  
 
 ---
 
 ## 📬 Contact
 
-📧 Email: amulya.gupta.2556@gdgoenkarohini.edu.in  
-🐙 GitHub: [AmulyaInnovates](https://github.com/AmulyaInnovates)
+📧 **amulya.gupta.2556@gdgoenkarohini.edu.in**  
+🐙 [GitHub: AmulyaInnovates](https://github.com/AmulyaInnovates)
 
 ---
 
