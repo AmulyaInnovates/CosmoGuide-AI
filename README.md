@@ -6,15 +6,15 @@ CosmoGuide AI is your intelligent partner for overcoming any challenge—routine
 
 ---
 
-<div align="center" style="display:flex; justify-content:center; align-items:center; gap:40px; flex-wrap:nowrap;">
+<div align="center" style="display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap;">
 
   <!-- Left Image -->
-  <div style="border: 4px solid #00b7ff; box-shadow: 0 0 20px #00b7ff, 0 0 40px #0077ff; border-radius: 20px; padding: 5px;">
-    <img src="CosmoCalling.jpg" alt="Cosmo Calling" width="230" height="230" style="border-radius: 15px;">
+  <div style="border: 5px solid #00c3ff; box-shadow: 0 0 25px #00c3ff, 0 0 50px #0077ff; border-radius: 20px; padding: 6px; transition: all 0.3s ease;">
+    <img src="CosmoCalling.jpg" alt="Cosmo Calling" width="250" height="250" style="border-radius: 15px;">
   </div>
 
-  <!-- Middle Badges -->
-  <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; min-width:260px;">
+  <!-- Middle Badges Column -->
+  <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 280px;">
     <img src="https://img.shields.io/badge/Language-HTML%2C%20CSS%2C%20JavaScript-blue?style=for-the-badge" style="margin:6px 0;">
     <img src="https://img.shields.io/badge/Editor-Amulya--Gupta-orange?style=for-the-badge" style="margin:6px 0;">
     <img src="https://img.shields.io/github/repo-size/AmulyaInnovates/CosmoGuide-AI?style=for-the-badge" style="margin:6px 0;">
@@ -23,8 +23,8 @@ CosmoGuide AI is your intelligent partner for overcoming any challenge—routine
   </div>
 
   <!-- Right Image -->
-  <div style="border: 4px solid #ff9900; box-shadow: 0 0 20px #ff9900, 0 0 40px #ff6600; border-radius: 20px; padding: 5px;">
-    <img src="Project_Presentation.jpg" alt="Project Presentation" width="230" height="230" style="border-radius: 15px;">
+  <div style="border: 5px solid #ff9d00; box-shadow: 0 0 25px #ff9d00, 0 0 50px #ff6600; border-radius: 20px; padding: 6px; transition: all 0.3s ease;">
+    <img src="Project_Presentation.jpg" alt="Project Presentation" width="250" height="250" style="border-radius: 15px;">
   </div>
 
 </div>
