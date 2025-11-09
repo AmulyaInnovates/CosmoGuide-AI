@@ -6,18 +6,30 @@ CosmoGuide AI is your intelligent partner for overcoming any challenge—routine
 
 ---
 
-![Language](https://img.shields.io/badge/Language-HTML%2C%20CSS%2C%20JavaScript-blue?style=for-the-badge)
-![Editor](https://img.shields.io/badge/Editor-Amulya--Gupta-orange?style=for-the-badge)
-![Repo Size](https://img.shields.io/github/repo-size/AmulyaInnovates/CosmoGuide-AI?style=for-the-badge)
-![Stars](https://img.shields.io/github/stars/AmulyaInnovates/CosmoGuide-AI?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+<div align="center" style="display: flex; justify-content: center; align-items: center; gap: 30px; flex-wrap: wrap;">
 
----
+  <!-- Left Image -->
+  <div style="border: 4px solid #00b7ff; box-shadow: 0 0 20px #00b7ff, 0 0 40px #0077ff; border-radius: 20px; padding: 5px;">
+    <img src="CosmoCalling.jpg" alt="Cosmo Calling" width="220" height="220" style="border-radius: 15px;">
+  </div>
 
-<p align="center">
-  <img src="CosmoCalling.jpg" alt="Cosmo Calling" width="220" height="220" style="border-radius:15px; margin:10px;">
-  <img src="Project_Presentation.jpg" alt="Project Presentation" width="220" height="220" style="border-radius:15px; margin:10px;">
-</p>
+  <!-- Badges in the Middle -->
+  <div style="text-align: center; min-width: 250px;">
+    <p>
+      <img src="https://img.shields.io/badge/Language-HTML%2C%20CSS%2C%20JavaScript-blue?style=for-the-badge"><br>
+      <img src="https://img.shields.io/badge/Editor-Amulya--Gupta-orange?style=for-the-badge"><br>
+      <img src="https://img.shields.io/github/repo-size/AmulyaInnovates/CosmoGuide-AI?style=for-the-badge"><br>
+      <img src="https://img.shields.io/github/stars/AmulyaInnovates/CosmoGuide-AI?style=for-the-badge"><br>
+      <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge">
+    </p>
+  </div>
+
+  <!-- Right Image -->
+  <div style="border: 4px solid #ff9900; box-shadow: 0 0 20px #ff9900, 0 0 40px #ff6600; border-radius: 20px; padding: 5px;">
+    <img src="Project_Presentation.jpg" alt="Project Presentation" width="220" height="220" style="border-radius: 15px;">
+  </div>
+
+</div>
 
 ---
 
